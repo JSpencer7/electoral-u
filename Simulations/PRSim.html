@@ -1,0 +1,71 @@
+/<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simulation Results - First Past The Post</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id  = 'topbar'>
+        <ul>
+          <li>
+            <img src="\Group 1.png" id='logo'></img>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='\index.html'>Home</a>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="dropdown">
+              <a href='#'>Electoral Systems</a>
+              <div class='dropdown-content' >
+                <a href="\Info_pages\FPTP.html">First Past the Post</a>
+                <a href="\Info_pages\AV.html">Alternative Vote</a>
+                <a href="\Info_pages\PR.html">Proportional Representation</a>
+                <a href="\Info_pages\STV.html">Single Transferable Vote</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='#'>Case Studies</a>
+              <div class='dropdown-content' >
+                <a href="\Case_Studies\Germany.html">Germany</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='\About.html'>About</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <div id = 'Chart'>
+      <canvas id="FPTPChart" width="600px" height="900px">
+      </canvas>
+    </div>
+    <div class='WinExplanation'>
+      <h3> The Seats in a 200-member parliament would be distributed as follows:</h3>
+      <ul class='PRList'>
+        <li>ECDL:  <span id='C1-percent'> NONE </span>%    <span id='C1-seats'>NONE</span> seats</li>
+        <li>UCIP: <span id='C2-percent'> NONE </span>%   <span id='C2-seats'>NONE</span> seats</li>
+        <li>NIP : <span id='C3-percent'> NONE </span>%    <span id='C3-seats'>NONE</span> seats</li>
+        <li>CBA : <span id='C4-percent'> NONE </span>%    <span id='C4-seats'>NONE</span> seats</li>
+      </ul>
+      <br>
+      <p> In Proportional Representation the parties get the same % of the seats as the % of the vote that they receive. This is done using a formula. Here I have used the Webster/Sainte-Laguë method, which is used in Germany and was the system proposed for use in the UK, owing to the fact it gives the amount of seats most representative of the actual votes.
+      </p>
+    </div>
+    <a class='TourButton' href='/Info_pages/STV.html'> <span>Continue </span> </a>
+    <script src='PR.js'>
+    </script>
+    <!-- <button onclick="MakeChart()" class='ChartCreate'></button> -->
+  </body>
+</html>

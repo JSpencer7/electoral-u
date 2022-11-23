@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+  <title>Single Transferable Vote(STV) </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+
+        });
+    });
+</script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav id  = 'topbar'>
+      <ul>
+        <li>
+          <img src="\Group 1.png" id='logo'></img>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href='\index.html'>Home</a>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="dropdown">
+            <a href='#'>Electoral Systems</a>
+            <div class='dropdown-content' >
+              <a href="\Info_pages\FPTP.html">First Past the Post</a>
+              <a href="\Info_pages\AV.html">Alternative Vote</a>
+              <a href="\Info_pages\PR.html">Proportional Representation</a>
+              <a href="\Info_pages\STV.html">Single Transferable Vote</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href='#'>Case Studies</a>
+            <div class='dropdown-content' >
+              <a href="\Case_Studies\Germany.html">Germany</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href='\About.html'>About</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class= 'Title'>
+    <h1> Single Transferable Vote </h1>
+  </div>
+  <div class='Description'>
+    <p>  Single Transferable Vote is a system used for electing candidates using ranked voting for multiple seats.<br><br>
+
+      The voters are presented with a ballot where they rank candidates in order of preference. When the ballots have been collected, the votes will be distributed to the first-preference candidate of the voters. Then a quota of votes that is needed to get a seat is calculated, this can be done by many different formulas, but commonly uses the hare formula:
+    </p>
+    $$quota = floor( \frac{votes\  cast}{seats\ to\ fill+1})+1$$
+    <p>
+      Where floor is rounding down to the nearest whole number.
+      <br><br>
+      If any candiates meet the quota then they are given a seat. If a candidate has surplus votes then those votes are split between the reamining candidates proportionally based on the percent of the elected candidate's voters who voted for the other candidates as their next choice. <br>For example, if the quota was 10 votes, person A got 30 votes and 50% of person A's voters had person C as their next choice, 5% had person B as their next choice, 5% had person D as their next choice and 40% had person E as their next choice then the surplus votes would be distributed as follows:
+    </p>
+    <ul>
+      <li> Person C - 10 votes</li>
+      <li> Person B - 1 vote </li>
+      <li> Perosn D - 1 vote</li>
+      <li> Perosn E - 8 votes</li>
+    </ul>
+    <p> If no candidate has more than a quota of votes and there are seats left to be filled then the candidate with the least votes is eliminated and their votes are distributed to the voters' next choices. This process is repeated until all of the seats that need to be filled have been filled.
+    </p>
+    <br><h2>Pros:</h2>
+    <p> There are some pros to this system</p>
+    <ul>
+      <li> The makeup of the parliament is representative of a wide range of views, whilst also making sure they are generally agreeable </li>
+      <li> It eliminates the need for tactical voting so it allows for many parties to win seats.</li>
+      <li> It is representative whilst also allowing for local representation</li>
+    </ul>
+    <br><h2> Cons:</h2>
+    <p> Cons to this system include:</p>
+    <ul>
+      <li>It may be slightly confusing for people to understand</li>
+      <li>More niche views will not be represented</li>
+    </ul>
+  </div>
+  <a class="SIM_BUTTON" href="/Simulations/STV.html" style='top:1300px;'><span> Simulation </span></a>
+</body>

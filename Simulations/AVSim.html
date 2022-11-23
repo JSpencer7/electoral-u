@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simulation Results - First Past The Post</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id  = 'topbar'>
+        <ul>
+          <li>
+            <img src="\Group 1.png" id='logo'></img>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='\index.html'>Home</a>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="dropdown">
+              <a href='#'>Electoral Systems</a>
+              <div class='dropdown-content' >
+                <a href="\Info_pages\FPTP.html">First Past the Post</a>
+                <a href="\Info_pages\AV.html">Alternative Vote</a>
+                <a href="\Info_pages\PR.html">Proportional Representation</a>
+                <a href="\Info_pages\STV.html">Single Transferable Vote</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='#'>Case Studies</a>
+              <div class='dropdown-content' >
+                <a href="\Case_Studies\Germany.html">Germany</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='\About.html'>About</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <div id = 'Chart'>
+      <canvas id="FPTPChart" width="600px" height="900px">
+      </canvas>
+    </div>
+    <script src='AV.js'>
+    </script>
+    <div class='Stages' id='WinEx'>
+      <h3> The winner is <span id='Win'>ERROR</span> with <span id="WinVote"> ERROR </span> </h3>
+      <br>
+      <p> This is because they managed to get a majority after the worst performing candidates were eliminated and their votes redistributed to their next choice of candidate.
+      </p>
+    </div>
+
+    <div class="Stages" id= 'AVStage'>
+      <p> Beacause no candidate has a majority, the votes of the lowest ranked candidate have been redistributed to the voters' next choice. Here <span id= 'Loser'>NONE</span> has been eliminated and their <span id=LVotes>NONE</span> votes have been redistributed between the remaining candidates.
+      </p>
+      <button class="NxtStage" type="button" onclick="lol()">Next Stage</button>
+
+    </div>
+
+    <div class='Stages' id= 'startStage'>
+      <p> These are the results after the first count, click the next button below to show the next stage of the process </p>
+      <button class='NxtStage' onclick='lol()'>Next Stage</button>
+    </div>
+    <a class='TourButton' href='/Info_pages/PR.html'> <span>Continue </span> </a>
+  </body>
+</html>

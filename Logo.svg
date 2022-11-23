@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1130.293" height="1502.427" viewBox="0 0 1130.293 1502.427">
+  <g id="Group_1" data-name="Group 1" transform="translate(-275.707 -286.573)">
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="matrix(0.921, -0.391, 0.391, 0.921, 275.707, 364.719)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="200" height="293" stroke="none"/>
+      <rect x="0.5" y="0.5" width="199" height="292" fill="none"/>
+    </g>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(308 526)" fill="#185caa" stroke="#707070" stroke-width="1">
+      <rect width="325" height="176" stroke="none"/>
+      <rect x="0.5" y="0.5" width="324" height="175" fill="none"/>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="matrix(0.921, -0.391, 0.391, 0.921, 310.395, 406.534)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="55" height="45" stroke="none"/>
+      <rect x="0.5" y="0.5" width="54" height="44" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="matrix(0.921, -0.391, 0.391, 0.921, 344.5, 481.99)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="55" height="45" stroke="none"/>
+      <rect x="0.5" y="0.5" width="54" height="44" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" y1="41" x2="97" transform="translate(388.5 375.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_2" data-name="Line 2" y1="41" x2="97" transform="translate(422 460.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Electoral_U_" data-name="Electoral U
+
+
+
+
+" transform="translate(674 694)" fill="#185caa" font-size="167" font-family="Staatliches-Regular, Staatliches"><tspan x="0" y="0">Electoral </tspan><tspan y="0" fill="#e8b256">U</tspan><tspan fill="#707070"><tspan x="0" y="209"></tspan><tspan x="0" y="418"></tspan><tspan x="0" y="627"></tspan><tspan x="0" y="836"></tspan><tspan x="0" y="1045"></tspan></tspan></text>
+    <line id="Line_3" data-name="Line 3" x2="325" y2="1" transform="translate(308.5 592.908)" fill="none" stroke="#707070" stroke-width="4"/>
+  </g>
+</svg>

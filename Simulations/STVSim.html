@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simulation Results - First Past The Post</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id  = 'topbar'>
+        <ul>
+          <li>
+            <img src="\Group 1.png" id='logo'></img>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='\index.html'>Home</a>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="dropdown">
+              <a href='#'>Electoral Systems</a>
+              <div class='dropdown-content' >
+                <a href="\Info_pages\FPTP.html">First Past the Post</a>
+                <a href="\Info_pages\AV.html">Alternative Vote</a>
+                <a href="\Info_pages\PR.html">Proportional Representation</a>
+                <a href="\Info_pages\STV.html">Single Transferable Vote</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='#'>Case Studies</a>
+              <div class='dropdown-content' >
+                <a href="\Case_Studies\Germany.html">Germany</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='\About.html'>About</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <div id = 'Chart'>
+      <canvas id="FPTPChart" width="600px" height="900px">
+      </canvas>
+    </div>
+    <script src='STV.js'>
+    </script>
+    <div class="Stages" id='WinEx'>
+      <h3> Seats Allocated</h3>
+      <br>
+      <p> All seats have been filled by candidates, here are the allocations:</p>
+      <ol>
+        <li> <span id = Seat1Win></span></li>
+        <li> <span id = Seat2Win></span></li>
+        <li> <span id = Seat3Win></span></li>
+      </ol>
+    </div>
+    <div class='Stages' id='SeatEx'>
+      <h3> Seat <span id=seatnum> </span> goes to <span id=seatcan> </span> </h3>
+      <br>
+      <p> This is because they managed to get more than the required quota of <span id='quotavotes'></span> votes.
+        <br>
+        Furthermore, the number of surplus votes <span id='surplus'></span> this candidate had above the quota are transferred to the second choices of their voters, in proportion to the next choices of the voters for them.
+      </p>
+      <button class="NxtStage" type="button" onclick="lol()">Next Stage</button>
+    </div>
+
+    <div class="Stages" id= 'AVStage'>
+      <p> Beacause not all seats have been filled as there are not 3 candidates with more than a quota of <span id=quotavotes_></span>, the votes of the lowest ranked candidate have been redistributed to the voters' next choice. Here <span id= 'Loser'>NONE</span> has been eliminated and their <span id=LVotes>NONE</span> votes have been redistributed between the remaining candidates.
+      </p>
+      <button class="NxtStage" type="button" onclick="lol()">Next Stage</button>
+
+    </div>
+
+    <div class='Stages' id= 'startStage'>
+      <p> These are the results after the first count, click the next button below to show the next stage of the process </p>
+      <button class='NxtStage' onclick='lol()'>Next Stage</button>
+    </div>
+    <a class='TourButton' href='/Case_Studies/Germany.html'> <span>Continue </span> </a>
+
+  </body>
+</html>

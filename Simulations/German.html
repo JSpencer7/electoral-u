@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Electoral Simulation - Alternative Vote</title>
+    <link href="styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header>
+      <nav id  = 'topbar'>
+        <ul>
+          <li>
+            <img src="Group 1.png" id='logo'></img>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='/index.html'>Home</a>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="dropdown">
+              <a href='#'>Electoral Systems</a>
+              <div class='dropdown-content' >
+                <a href="Info_pages\FPTP.html">First Past the Post</a>
+                <a href="Info_pages\AV.html">Alternative Vote</a>
+                <a href="Info_pages\PR.html">Proportional Representation</a>
+                <a href="Info_pages\STV.html">Single Transferable Vote</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='#'>Case Studies</a>
+              <div class='dropdown-content' >
+                <a href="Case_Studies\Germany.html">Germany</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='About.html'>About</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class= 'Ballot' id='Ballot'>
+      <h2> Ballot</h2>
+      <form class='Ballot-List' action="AVSim.html">
+        <ul class=CInfo>
+          <li> Chris The Caterpillar</li>
+          <li> UCIP </li>
+          <li><input type = 'number' class ='Vote' id='C1'></input></li>
+        </ul>
+        <ul class = 'CInfo'>
+          <li> Chris The Caterpillar</li>
+          <li> UCIP </li>
+          <li><input type = 'number' class ='Vote' id='C2'></input></li>
+        </ul>
+        <ul class='CInfo'>
+          <li> Chris The Caterpillar</li>
+          <li> UCIP </li>
+          <li><input type = 'number' class ='Vote' id='C3' value="3"></input></li>
+        </ul>
+        <ul class='CInfo'>
+          <li> Chris The Caterpillar</li>
+          <li> UCIP </li>
+          <li><input type = 'number' class ='Vote' id='C4' value="3"></input></li>
+        </ul>
+        <script src='AV.js'></script>
+        <input onclick="Main()"class = 'SubmitBallot' type="submit"  ></input>
+      </form>
+    </div>
+    <div class="Info_box" id='Box'>
+      <script src='Sim.js'>
+      </script>
+      <h1> Simulation - Alternative Vote </h1>
+      <br>
+      <p>
+        In this simulation you will first be asked to complete a sample ballot by ranking the candidates from 1 to 4. The simulation will then randomise results and show you the process of counting votes.
+      </p>
+      <br>
+      <button class='StartSim' onclick="closebox()"> Start </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+/<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simulation Results - First Past The Post</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id  = 'topbar'>
+        <ul>
+          <li>
+            <img src="\Group 1.png" id='logo'></img>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='\index.html'>Home</a>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="dropdown">
+              <a href='#'>Electoral Systems</a>
+              <div class='dropdown-content' >
+                <a href="\Info_pages\FPTP.html">First Past the Post</a>
+                <a href="\Info_pages\AV.html">Alternative Vote</a>
+                <a href="\Info_pages\PR.html">Proportional Representation</a>
+                <a href="\Info_pages\STV.html">Single Transferable Vote</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='#'>Case Studies</a>
+              <div class='dropdown-content' >
+                <a href="\Case_Studies\Germany.html">Germany</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href='\About.html'>About</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <div id = 'Chart'>
+      <canvas id="FPTPChart" width="600px" height="900px">
+      </canvas>
+    </div>
+    <div class='WinExplanation'>
+      <h3> The winner is <span id='Win'>ERROR</span> with <span id="WinVote"> ERROR </span> </h3>
+      <br>
+      <p> This is because they got the most votes. In First Past The Post the candidate with the most votes will win their respective election
+      </p>
+    </div>
+
+    <script src='FPTP.js'>
+    </script>
+      <a class='TourButton' href='/Info_pages/AV.html'> <span>Continue </span> </a>
+  </body>
+</html>
